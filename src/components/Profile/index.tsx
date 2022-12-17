@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from "../../contexts/UserProvider";
+import { UserContext } from "../../providers/UserProvider";
 import { HeadingTwo, Paragraph } from "../../styles/Typography";
 import { ProfileStyled } from "./style";
 
