@@ -136,12 +136,7 @@ export interface IOwner {
   site_admin: boolean;
 }
 
-export interface ILanguages {
-  [key: string]: number;
-}
-
 export interface IUserContextProps {
   user: IUserResponse | null;
   repos: IReposResponse[] | null;
-  getLanguagesByRepo: (repo: string) => Promise<string[] | undefined>;
 }

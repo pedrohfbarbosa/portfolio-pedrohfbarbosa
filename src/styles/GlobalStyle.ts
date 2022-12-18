@@ -20,14 +20,16 @@ export const GlobalStyle = createGlobalStyle`
   --border-color: #00FF00;
 
   --radius: 1.25rem;
+  --radius-2: 0.7rem;
   --radius-rounded: 50%;
 
-  --font-size-1: 32px;
-  --font-size-2: 24px;
-  --font-size-3: 20px;
-  --font-size-4: 16px;
-  --font-size-5: 14px;
-}
+  --font-size-1: 2rem;
+  --font-size-2: 1.5rem;
+  --font-size-3: 1.25rem;
+  --font-size-4: 1rem;
+  --font-size-5: 0.875rem;
+  --font-size-6: 0.75rem;
+} 
 
   html {
     color-scheme: dark light;
@@ -50,5 +52,11 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
 
-  
+  ul {
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
 `;

@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { IProviderProps } from "../interfaces";
-import { ILanguages, IReposResponse, IUserResponse, IUserContextProps } from "./interfaces";
+import { IReposResponse, IUserResponse, IUserContextProps } from "./interfaces";
 
 export const UserContext = createContext({} as IUserContextProps);
 
@@ -59,24 +59,12 @@ export const UserProvider = ({ children }: IProviderProps) => {
 
   useEffect(() => {
     getUser();
-    
+
     getRepos();
   }, []);
 
-  const getLanguagesByRepo = async (repo: string) => {
-    try {
-      const response = await api.get<ILanguages>(`/${repo}/languages`);
-
-      const languages = Object.keys(response.data);
-
-      return languages;
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
-    <UserContext.Provider value={{ user, repos, getLanguagesByRepo }}>
+    <UserContext.Provider value={{ user, repos }}>
       {children}
     </UserContext.Provider>
   );
