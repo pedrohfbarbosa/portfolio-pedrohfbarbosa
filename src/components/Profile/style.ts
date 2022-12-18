@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProfileStyled = styled.div`
+export const ProfileStyled = styled.section`
   background-color: var(--bg-cards);
 
   width: 100%;
