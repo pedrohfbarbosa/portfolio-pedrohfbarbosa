@@ -7,7 +7,6 @@ import { UserContext } from "../../providers/UserProvider";
 import { Span } from "../../styles/Typography";
 import { CardLink, LinksStyled } from "./style";
 
-
 export const Links = () => {
   const { user } = useContext(UserContext);
 
@@ -39,11 +38,6 @@ export const Links = () => {
           >
             LinkedIn
           </a>
-        </CardLink>
-
-        <CardLink>
-          <MdOutlineEmail />
-          <Span>barbosatech.adm@gmail.com</Span>
         </CardLink>
       </ul>
     </LinksStyled>
