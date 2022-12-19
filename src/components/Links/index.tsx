@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { GoLocation } from "react-icons/go";
 import { AiFillGithub } from "react-icons/ai";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { MdOutlineEmail } from "react-icons/md";
 import { UserContext } from "../../providers/UserProvider";
 import { Span } from "../../styles/Typography";
 import { CardLink, LinksStyled } from "./style";
