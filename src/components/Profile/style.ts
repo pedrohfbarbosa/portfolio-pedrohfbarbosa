@@ -14,6 +14,10 @@ export const ProfileStyled = styled.section`
   align-items: center;
   gap: 1rem;
 
+  padding: 2rem;
+  
+  text-align: center;
+
   & > figure {
     width: 100px;
     height: 100px;

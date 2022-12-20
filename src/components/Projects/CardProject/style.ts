@@ -31,12 +31,10 @@ export const CardProjectStyled = styled.li`
       display: flex;
       align-items: center;
       gap: 2rem;
-      
-      & > a {
-        &:hover {
-          text-decoration: underline;
-          color: var(--text-color);
-        }
+
+      & > a:hover {
+        text-decoration: underline;
+        color: var(--border-color);
       }
     }
   }
